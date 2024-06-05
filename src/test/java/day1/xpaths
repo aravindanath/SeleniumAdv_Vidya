@@ -1,0 +1,14 @@
+/tag/tag/tag/tag/tag/tag/tag/tag/tag/tag
+
+//tag[@attribute='value']
+//tag[@attribute='value' and @attribute='value']
+//tag[@attribute='value' or @attribute='value']
+//tag[@attribute='value' and contains(text(),'value')]]
+//tag[ contains(text(),'value')]
+//tag[text()='value')]
+//tag[contains(@attribute,'value')]]
+//tag[starts-with(text(),'value')]]
+//tag[starts-with(@attribute,'value')]
+
+//following
+//preceding
