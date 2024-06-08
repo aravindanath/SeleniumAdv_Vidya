@@ -1,12 +1,16 @@
 package day1;
 
-public class Xpath3 {
+import org.openqa.selenium.By;
+import org.testng.annotations.Test;
 
-    public static void main(String[] args) {
+public class Xpath3 extends BaseClass{
 
-        System.out.println("Hello world!");
+    @Test
+    public void xpath3(){
 
+    driver.get("https://www.amazon.in");
 
+    driver.findElement(By.xpath("//a[starts-with(text(),'Today')]")).click();
         
     }
 }

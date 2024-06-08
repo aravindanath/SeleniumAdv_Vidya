@@ -12,3 +12,19 @@
 
 //following
 //preceding
+
+ https://the-internet.herokuapp.com/tables
+ https://admin-demo.nopcommerce.com/Admin/Product/List
+
+ https://www.guru99.com/xpath-selenium.html
+ https://www.godigit.com/
+ https://www.redbus.in/
+
+css
+* -- contains --input[id*='twotab']
+^ -- Starts with -- input[id^='twotab']
+$ -- ends with -- input[id$='box']
+. -- class
+# -- ID
+
+tagName[atrribute='value']
