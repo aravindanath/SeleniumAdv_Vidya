@@ -9,8 +9,9 @@ public class fb_signup extends BaseClass {
     public void Xpath_6() throws InterruptedException {
 
         driver.get("https://www.facebook.com/signup/");
-        driver.findElement(By.xpath("//input[@name='firstname']")).sendKeys("vidya@gmail.com");
-        driver.findElement(By.xpath("//input[@name='firstname']/following::input")).sendKeys("vidya");
+        driver.findElement(By.xpath("//input[@name='lastname'])")).sendKeys("vidya");
+//        driver.findElement(By.xpath("//input[@name='firstname']")).sendKeys("vidya@gmail.com");
+//        driver.findElement(By.xpath("//input[@name='firstname']/following::input")).sendKeys("vidya");
 
     }
 }
