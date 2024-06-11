@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 import java.util.ArrayList;
 
-public class Xpath5 extends BaseClass {
+public class herokuapp extends BaseClass {
 
     @Test
     public void practice_xpath1() {
