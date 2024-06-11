@@ -1,4 +1,12 @@
-/tag/tag/tag/tag/tag/tag/tag/tag/tag/tag
+Locators:
+id
+name
+class name
+partial link
+link
+xpath
+css
+
 
 //tag[@attribute='value']
 //tag[@attribute='value' and @attribute='value']
@@ -9,9 +17,20 @@
 //tag[contains(@attribute,'value')]]
 //tag[starts-with(text(),'value')]]
 //tag[starts-with(@attribute,'value')]
+//tag[ends-with(@attribute, 'value')]
+//tag[ends-with(text(), 'value')]
 
+
+X-Path Axes Methods:
 //following
 //preceding
+//ancestor
+//child
+//parent
+//preceding
+//following-sibling
+//self
+//Descendant
 
  https://the-internet.herokuapp.com/tables
  https://admin-demo.nopcommerce.com/Admin/Product/List
@@ -27,4 +46,17 @@ $ -- ends with -- input[id$='box']
 . -- class
 # -- ID
 
+The different types of CSS Locator in Selenium IDE
+Tag and ID --->tagname#idname
+Tag and class --->tagname.classname
+Tag and attribute --->tagname[atrribute='value']
+Tag, class, and attribute --->tagname.classname[attribute=value]
+Inner text --->tagname:contains("inner text")
+
 tagName[atrribute='value']
+
+Doubts:
+1.What if we have a space in the class name
+2.Preceding practice
+3.What are the dynamic web elements
+4.Dynamic Xpath

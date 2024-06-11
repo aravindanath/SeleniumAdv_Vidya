@@ -21,9 +21,8 @@ public class redbus extends BaseClass{
 
         js.executeScript("window.scrollBy(0,500)");
 
-//        Thread.sleep(4000);
+//      Thread.sleep(4000);
         System.out.println("Executed");
-
 
 
     }
