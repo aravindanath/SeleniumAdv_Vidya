@@ -32,6 +32,8 @@ X-Path Axes Methods:
 //self
 //Descendant
 
+We can use combination for css selectors to identify the element.
+
  https://the-internet.herokuapp.com/tables
  https://admin-demo.nopcommerce.com/Admin/Product/List
 
@@ -63,3 +65,4 @@ Doubts:
 5.Doubt in fb signup page
 6.Show the page and ask doubts about last, position
 7.How to automate calender in the "https://admin-demo.nopcommerce.com/Admin/Product/List" website
+8.What is the good course in udemy for API testing?
