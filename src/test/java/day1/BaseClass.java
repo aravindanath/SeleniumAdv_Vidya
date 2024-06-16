@@ -29,10 +29,10 @@ public class BaseClass {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(45));
     }
 
-//    @AfterClass
-//    public void tearDown() throws InterruptedException {
-//        Thread.sleep(4000);
-//        driver.quit();
-//    }
+    @AfterClass
+    public void tearDown() throws InterruptedException {
+        Thread.sleep(4000);
+        driver.quit();
+    }
 
 }
