@@ -1,10 +1,13 @@
 package day1;
 
 import com.github.javafaker.Faker;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.*;
 
+import java.time.Duration;
 import java.util.Locale;
+import java.util.NoSuchElementException;
 
 public class Utils {
    static Faker faker = new Faker(new Locale("en-IND"));
@@ -62,4 +65,18 @@ public class Utils {
         Select select = new Select(element);
         select.selectByIndex(index);
     }
+
+    public static void waitForElementToLoad(WebDriver driver, WebElement element){
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+        wait.until(ExpectedConditions.visibilityOf(element));
+    }
+
+    public static void fluentWait(WebDriver driver){
+        FluentWait<WebDriver> wait = new FluentWait<>(driver);
+        wait.withTimeout(Duration.ofSeconds(30));
+        wait.pollingEvery(Duration.ofSeconds(120));
+        wait.ignoring(NoSuchElementException.class);
+        wait.until(ExpectedConditions.alertIsPresent());
+    }
+
 }
