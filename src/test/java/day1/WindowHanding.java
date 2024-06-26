@@ -15,7 +15,7 @@ public class WindowHanding extends BaseClass{
 
         driver.get("https://www.amazon.in/");
 
-        driver.findElement(By.id("twotabsearchtextbox")).sendKeys("iphone ", Keys.ENTER);
+        driver.findElement(By.id("twotabsearchtextbox")).sendKeys("smart tv ", Keys.ENTER);
 
         List<WebElement> elements = driver.findElements(By.xpath("//span[@class='a-size-medium a-color-base a-text-normal']"));
 
@@ -31,12 +31,13 @@ public class WindowHanding extends BaseClass{
        }
 
       String txt =  driver.findElement(By.xpath("//span[@class='a-price aok-align-center reinventPricePriceToPayMargin priceToPay']/span[2]/span[2]")).getText();
-
+       Utils.takeSnapShot(driver,"amz");
        System.out.println(txt);
        driver.close();
 
        driver.switchTo().window(parentWin);
        System.out.println(driver.getTitle());
+
 
     }
 }

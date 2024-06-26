@@ -20,7 +20,8 @@ public class BaseClass {
         options.addArguments("--disable-popup-blocking");
         options.addArguments("--no-sandbox");
         options.addArguments("--disable-dev-shm-usage");
-
+        options.setAcceptInsecureCerts(true);
+//        options.addArguments("--headless");
         // Add geolocation permission
         options.addArguments("--enable-geolocation");
 
